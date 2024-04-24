@@ -16,12 +16,12 @@ return new class extends Migration
             $table->string('judul',100);
             $table->string('penulis',100);
             $table->string('penerbit',100);
-            $table->year('tahun_terbit');
+            $table->date('tahun_terbit');
             $table->integer('stok');
             $table->bigInteger('harga_produk');
             $table->bigInteger('harga_jual');
             $table->bigInteger('diskon')->nullable();
-            $table->string('sampul');
+            // $table->string('sampul');
             $table->timestamps();
         });
     }

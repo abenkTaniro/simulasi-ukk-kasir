@@ -36,18 +36,18 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="dashboard-menu.html" class="nav-link px-4">
+                        <a href="{{ route('pasok.index') }}" class="nav-link px-4">
                             <i class="bx bx-food-menu"></i> Pasok
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="dashboard-pendapatan.html" class="nav-link px-4">
-                            <i class="bx bx-money"></i> Pendapatan
+                        <a href="{{ route('kasir.index') }}" class="nav-link px-4 {{request()->is('kasir') ? 'active' : ''}}">
+                            <i class="bx bx-user-pin"></i> Kasir
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="dashboard-kasir.html" class="nav-link px-4">
-                            <i class="bx bx-user-pin"></i> Kasir
+                        <a href="dashboard-pendapatan.html" class="nav-link px-4">
+                            <i class="bx bx-money"></i> Laporan
                         </a>
                     </li>
                 </ul>
